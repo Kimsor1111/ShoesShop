@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Kanit';
+}
+.colorwhite{
+    color: white;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+}
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(18, 18, 18, 0.778);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .close-login{
+    width: 30px;
+    height: 30px;
+    /* background-color: tan; */
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+.login .login-form{
+    width: 35vw;
+    height: 80vh;
+    background-color: red;
+}
+.home{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 0, 0.742);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 100;
+}
+.home i{
+    color: black;
+    font-size: 30px;
+}
+.cart-container{
+    position: fixed;
+    z-index: 10;
+    top: 100px;
+    right: 0;
+    width: 500px;
+    /* overflow: hidden;    */
+    height: 100vh;
+    background-color: rgba(197, 137, 59, 0.856);
+    transform: translateX(500px);
+    transition: 400ms ease all;
+}
+.cart-container .close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-container .close p{
+    font-size: 40px;
+    cursor: pointer;
+}
+.top{
+    height: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top .text1 a{
+    color: white;
+    text-decoration: none;
+}
+.top .text1 a:hover{
+    color: rgb(121, 121, 255);
+    text-decoration: underline;
+}
+.menu{
+    background-color: white;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.582);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.menu .header-logo{
+    width: 7%;
+    height: 100%;
+    margin-inline-start: 5%;
+}
+.menu .header-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.menu nav{
+    width: 60%;
+    height: 100%;
+    /* background-color: red; */
+}
+.menu nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu nav ul li{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-inline-end: 20px;
+}
+.menu nav ul li a{
+    padding: 18px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+    opacity: 0.7;
+    font-weight: 550;
+    position: relative;
+}
+.menu nav ul li a:hover{
+    transform: scale(120%);
+    opacity: 1;
+    color: rgb(58, 53, 24);
+}
+.menu nav ul li .submenu{
+    overflow: hidden;
+    position: absolute;
+    top: 60.3px;
+    display: none;
+    left: 13%;
+    border: 1px solid black;
+    border-top: none;
+}
+.menu nav ul li:hover .submenu{
+    display: block;
+}
+.menu nav ul li .submenu .submenu-1{
+    width: 86.15vw;
+    height: 380px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.menu nav ul li .submenu .submenu-1 .menu-1{
+    width: 17%;
+    height: 100%;
+}
+.menu nav ul li .submenu .submenu-1 .menu-1 a{
+    font-size: 30px;
+}
+.menu nav ul li .submenu .submenu-1 .menu-1 a:hover{
+    color: black;
+}
+.menu nav ul li .submenu .submenu-1 .menu-1 ul li{
+    float: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.menu nav ul li .submenu .submenu-1 .menu-1 ul li a{
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+}
+.menu nav ul li .submenu .submenu-1 .menu-1 ul li:hover a{
+    text-decoration: underline;
+    transform: scale(100%);
+}
+.menu nav ul li .submenu .submenu-1 .pic-1{
+    width: 25%;
+    height: 100%;
+}
+.menu nav ul li .submenu .submenu-1 .pic-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.menu .header-icon{
+    width: 25%;
+    height: 100%;
+    /* background-color: tan; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .header-icon input{
+    width: 25%;
+    height: 50%;
+    padding: 5px; /* Add padding */
+    background-color: white;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    margin-left: 50px;
+    transition: 0.5s;
+    cursor: text;
+}
+.menu .header-icon input:focus{
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 60%;
+    transform: translateX(-20px);
+    margin-left: 25px;
+}
+.menu .header-icon .icon{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .header-icon .icon .fa{
+    cursor: pointer;
+    font-size: 22px;
+    color: black;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.menu ,.header-icon .icon .fa:hover{
+    opacity: 1;
+}
+.feature1{
+    width: 90%;
+    height: 95vh;
+    background-color: black;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.feature1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature2{
+    width: 80%;
+    height: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.feature2 .item{
+    width: 49%;
+    height: 100%;
+}
+.feature2 .item img:hover{
+    transform: scale(102%);
+}
+.feature2 .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.product{
+    width: 95%;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.product .item{
+    width: 32.5%;
+    height: 500px;
+    margin-bottom: 20px;
+}
+.product .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature3{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.feature3 .feature-3-1{
+    width: 49.5%;
+    height: 100%;
+}
+.feature3 .feature-3-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.feature4{
+    width: 90%;
+    height: 350px;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.feature4 .feature-4-1{
+    width: 32.5%;
+    height: 100%;
+}
+.feature4 .feature-4-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    transition: 0.4s;
+}
+.feature4 .feature-4-1 img:hover{
+    transform: scale(102%);
+}
+.feature-nb{
+    width: 80%;
+    height: 500px;
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 50px;
+}
+.feature-nb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.last-feature{
+    width: 75%;
+    overflow: hidden;
+    /* background-color: red; */
+    margin: auto;
+    margin-block: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.last-feature .box{
+    width: 48%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.last-feature .box .des{
+    width: 100%;
+    height: 15%;
+    /* background-color: tan; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.last-feature .box .des h2{
+    color: black;
+}
+.last-feature .box .img{
+    width: 100%;
+    height: 85%;
+    /* background-color: antiquewhite; */
+}
+.last-feature .box .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.last-feature .box .img img:hover{
+    transform: scale(104%);
+}
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(51, 51, 51);
+}
+footer .footer-container{
+    width: 80%;
+    height: 100%;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .footer-container .footer-top{
+    width: 100%;
+    height: 88%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .footer-container .footer-top .box{
+    width: 24%;
+    height: 100%;
+    /* background-color: green; */
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+footer .footer-container .footer-top .box .logoname{
+    width: 100%;
+    height: 20%;
+    /* background-color: tan; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+footer .footer-container .footer-top .box .logoname .logo{
+    width: 29%;
+    height: 100%;
+    /* background-color: purple; */
+}
+footer .footer-container .footer-top .box .logoname .logo img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+footer .footer-container .footer-top .box .logoname .name{
+    width: 70%;
+    height: 100%;
+    /* background-color: indianred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-container .footer-top .box .content{
+    width: 100%;
+    height: 55%;
+    /* background-color: lime; */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-block: 2.5%;
+}
+footer .footer-container .footer-top .box .payment{
+    width: 100%;
+    height: 20%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-container .footer-top .box .payment .payment-icon-container{
+    width: 100%;
+    height: 40.3%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+footer .footer-container .footer-top .box .payment .payment-icon-container .icon{
+    width: 15%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-container .footer-top .box .payment .payment-icon-container .icon i{
+    font-size: 30px;
+    color: white;
+}
+footer .footer-container .footer-top .box ul{
+    list-style-type: square;
+    color: white;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+footer .footer-container .footer-top .box ul li{
+    margin-block: 5px;
+} 
+footer .footer-container .footer-top .box ul li a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    font-size: 18px;
+}
+footer .footer-container .footer-top .box ul li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+footer .footer-container .footer-top .box .social-container{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 5px;
+    box-sizing: border-box;
+}
+footer .footer-container .footer-top .box .social-container .icon{
+    width: 15.7%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-container .footer-top .box .social-container .icon i{
+    color: white;
+    font-size: 25px;
+    padding-top: 2px;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+footer .footer-container .footer-top .box .social-container .icon i:hover{
+    opacity: 1;
+}
+footer .footer-container .footer-top .box form{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+}
+footer .footer-container .footer-top .box form input{
+    width: 72.5%;
+    height: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+footer .footer-container .footer-top .box form button{
+    width: 25%;
+    height: 100%;
+    margin-left: 2.5%;
+    outline: none;
+    border-radius: 10px;
+}
+footer .footer-container .footer-bottom{
+    width: 100%;
+    height: 11.9%;
+    /* background-color: tan; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.548);
+    color: white;
+}
