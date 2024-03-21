@@ -15,6 +15,7 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
     left: 0;
@@ -89,7 +90,7 @@ body{
 }
 .login .login-form form .body .fa-eye , .login .login-form form .body .fa-eye-slash{
     position: fixed;
-    transform: translate(26.8vw , 8.2vh);
+    transform: translateX(26.5vw) translateY(11.8vh);
     cursor: pointer;
     display: none;
 }
@@ -680,7 +681,7 @@ footer .footer-container .footer-bottom{
     text-align: center;
 }
 .nike-product{
-    width: 95%;
+    width: 98%;
     overflow: hidden;
     /* background-color: red; */
     margin: 0 auto 100px auto;
@@ -705,12 +706,13 @@ footer .footer-container .footer-bottom{
     /* background-color: green; */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .nike-product .nike-product-container .product{
     width: 100%;
     height: 690px;
     /* background-color: purple; */
-    margin: 0;
+    margin: 0 0 50px 0;
 }
 .nike-product .nike-product-container .product .item{
     width: 32.7%;
@@ -726,6 +728,8 @@ footer .footer-container .footer-bottom{
     height: 75%;
     /* background-color: yellow; */
     margin-bottom: 2%;
+    position: relative;
+    z-index: 1;
 }
 .nike-product .nike-product-container .product .item .pic img{
     width: 100%;
@@ -739,4 +743,44 @@ footer .footer-container .footer-bottom{
     display: flex;
     flex-direction: column;
     line-height: 18px;
+    position: relative;
+}
+.nike-product .nike-product-container .product .item:hover .icon-hover{
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1;
+}
+.nike-product .nike-product-container .product .item .icon-hover{
+    width: 60px;
+    height: 240px;
+    /* background-color: red; */
+    position: absolute;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 0;
+}
+.nike-product .nike-product-container .product .item .icon-hover .icon{
+    width: 100%;
+    height: 24%;
+    background-color: rgba(0, 128, 0, 0.465);
+    margin-top: 3.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.nike-product .nike-product-container .product .item .icon-hover .icon:hover{
+    transform: scale(103%);
+}
+.nike-product .nike-product-container .product .item .icon-hover .icon i{
+    font-size: 27px;
+    color: rgb(59, 59, 59);
+}
+.nike-product .nike-product-container .product .item .icon-hover .icon:first-child{
+    margin-top: 0;
 }
