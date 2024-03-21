@@ -14,5 +14,23 @@ $(document).ready(function(){
     $('.close-login').click(function(){
         $('.login').css({'transform' : 'translateY(-100%)'})
     })
-    
+    $('.password').mousedown(function(){
+        $('.fa-eye-slash').css({'display' : 'block'})
+    })
+    $('.fa-eye-slash').click(function(){
+        $(this).css({'display' : 'none'})
+        $('.fa-eye').css({'display' : 'block'})
+        $('.password').attr('type' , 'text')
+    })
+    $('.fa-eye').click(function(){
+        $(this).css({'display' : 'none'})
+        $('.fa-eye-slash').css({'display' : 'block'})
+        $('.password').attr('type' , 'password')
+    })
+    $('.fa-heart').click(function(){
+        $('.fav-container').css({'transform' : 'translateX(0)'})
+    })
+    $('.fav-container .close p').click(function(){
+        $('.fav-container').css({'transform' : 'translateX(500px)'})
+    })
 })

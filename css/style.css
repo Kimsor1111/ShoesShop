@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    font-family: 'Kanit';
+    font-family: 'Kanit' , serif;
 }
 .colorwhite{
     color: white;
@@ -14,7 +14,7 @@ body{
 .login{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(18, 18, 18, 0.778);
+    background-color: rgba(0, 0, 0, 0.404);
     position: fixed;
     top: 0;
     left: 0;
@@ -39,9 +39,73 @@ body{
     font-size: 30px;
 }
 .login .login-form{
-    width: 35vw;
-    height: 80vh;
+    width: 30vw;
+    height: 280px;
+}
+.login .login-form form{
+    width: 100%;
+    height: 100%;
     background-color: red;
+    border-radius: 20px;
+}
+.login .login-form form .title{
+    width: 100%;
+    height:60px;
+    background-color: rgb(0, 213, 255);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.login .login-form form .body{
+    width: 100%;
+    height: 89.4%;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.login .login-form form .body input{
+    width: 90%;
+    height: 40px;
+    margin: 10px auto;
+    outline: none;
+    border: 2px solid rgba(68, 68, 68, 0.666);
+    border-radius: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.login .login-form form .body input[type=submit]{
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+}
+.login .login-form form .body input[type=password]{
+    position: relative;
+}
+.login .login-form form .body .fa-eye , .login .login-form form .body .fa-eye-slash{
+    position: fixed;
+    transform: translate(26.8vw , 8.2vh);
+    cursor: pointer;
+    display: none;
+}
+.login .login-form form .body .fa-eye{
+    display: none;
+}
+.login .login-form form .body a , .login .login-form form .body p{
+    font-size: 18px;
+    text-decoration: none;
+}
+.login .login-form form .body a{
+    color: blue;
+}
+.login .login-form form .body a:hover{
+    text-decoration: underline;
+    color: green;
 }
 .home{
     width: 60px;
@@ -60,19 +124,19 @@ body{
     color: black;
     font-size: 30px;
 }
-.cart-container{
+.cart-container , .fav-container{
     position: fixed;
-    z-index: 10;
-    top: 100px;
+    z-index: 1000;
+    top: 0;
     right: 0;
     width: 500px;
     /* overflow: hidden;    */
     height: 100vh;
-    background-color: rgba(197, 137, 59, 0.856);
+    background-color: rgb(197, 137, 59);
     transform: translateX(500px);
     transition: 400ms ease all;
 }
-.cart-container .close{
+.cart-container .close , .fav-container .close{
     width: 50px;
     height: 50px;
     position: absolute;
@@ -82,9 +146,13 @@ body{
     justify-content: center;
     align-items: center;
 }
-.cart-container .close p{
+.cart-container .close p , .fav-container .close p{
     font-size: 40px;
     cursor: pointer;
+    color: white;
+}
+.fav-container{
+    background-color: rgb(0, 48, 0);
 }
 .top{
     height: 40px;
@@ -580,4 +648,95 @@ footer .footer-container .footer-bottom{
     font-size: 20px;
     border-top: 1px solid rgba(0, 0, 0, 0.548);
     color: white;
+}
+.pagination-container{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(187, 187, 187, 0.582);
+    margin-block-end: 20px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.pagination-container .pagination-content{
+    width: 35%;
+    height: 70%;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagination-container .pagination-content .p{
+    width: 90%;
+    height: 100%;
+    /* background-color: tan; */
+}
+.pagination-container .pagination-content .p p{
+    transform: translateY(5px);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 15px;
+    text-align: center;
+}
+.nike-product{
+    width: 95%;
+    overflow: hidden;
+    /* background-color: red; */
+    margin: 0 auto 100px auto;
+}
+.nike-product .nike-proudct-header {
+    width: 100%;
+    height: 50px;
+    /* background-color: tan; */
+    margin-block-end: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nike-product .nike-proudct-header h3{
+    font-weight: 400;
+    transform: translateY(6px);
+}
+.nike-product .nike-product-container{
+    width: 100%;
+    overflow: hidden;
+    /* height: 650px; */
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+}
+.nike-product .nike-product-container .product{
+    width: 100%;
+    height: 690px;
+    /* background-color: purple; */
+    margin: 0;
+}
+.nike-product .nike-product-container .product .item{
+    width: 32.7%;
+    height: 100%;
+    /* background-color: blue; */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.nike-product .nike-product-container .product .item .pic{
+    width: 100%;
+    height: 75%;
+    /* background-color: yellow; */
+    margin-bottom: 2%;
+}
+.nike-product .nike-product-container .product .item .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nike-product .nike-product-container .product .item .des{
+    width: 100%;
+    height: 23%;
+    /* background-color: lightseagreen; */
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
 }
