@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.fa-magnifying-glass').click(function(){
         document.querySelector('.search').value = '';
     })
-    $('.fa-cart-shopping').click(function(){
+    $('.cart').click(function(){
         $('.cart-container').css({'transform' : 'translateX(0)'})
     })
     $('.cart-container .close p').click(function(){
@@ -27,7 +27,7 @@ $(document).ready(function(){
         $('.fa-eye-slash').css({'display' : 'block'})
         $('.password').attr('type' , 'password')
     })
-    $('.fa-heart').click(function(){
+    $('.heart').click(function(){
         $('.fav-container').css({'transform' : 'translateX(0)'})
     })
     $('.fav-container .close p').click(function(){
