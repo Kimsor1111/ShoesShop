@@ -394,6 +394,7 @@ body{
     justify-content: space-between;
     flex-direction: row;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 .feature3 .feature-3-1{
     width: 49.5%;
@@ -412,6 +413,7 @@ body{
     justify-content: space-between;
     flex-direction: row;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 .feature4 .feature-4-1{
     width: 32.5%;
@@ -732,13 +734,14 @@ footer .footer-container .footer-bottom{
 }
 .nike-product .nike-product-container .product{
     width: 100%;
-    height: 690px;
     /* background-color: purple; */
     margin: 0 0 -50px 0;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 .nike-product .nike-product-container .product .item{
     width: 33%;
-    height: 100%;
+    height: 690px;
     /* background-color: blue; */
     padding: 0;
     display: flex;
@@ -813,17 +816,18 @@ footer .footer-container .footer-bottom{
 }
 .feature-nike-end{
     width: 95%;
-    height: 450px;
+    overflow: hidden;
     /* background-color: red; */
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
+    flex-wrap: wrap;
 }
 .feature-nike-end .box{
     width: 32%;
-    height: 100%;
+    height: 450px;
     /* background-color: blue; */
 }
 .feature-nike-end .box .img{

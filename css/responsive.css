@@ -196,7 +196,10 @@
         display: block;
     }
     .feature1{
-        height: 55vh;
+        height: 68vh;
+    }
+    .feature1 img{
+        object-fit: contain;
     }
     .feature2{
         width: 95%;
@@ -241,15 +244,7 @@
         margin-block-end: -35px;
     }
     .nike-product .nike-product-container .product .item{
-        width: 49%;
-    }
-    .nike-product .nike-product-container .product .item .icon-hover{
-        width: 55px;
-        height: 220px;
-        transform: translateX(-100px) translateY(50px);
-    }
-    .nike-product .nike-product-container .product .item:hover .icon-hover{
-        transform: translateX(0) translateY(50px);
+        width: 33%;
     }
     .feature-nike-end{
         width: 95%;
@@ -257,6 +252,15 @@
     }
     .feature1 img{
         object-fit: cover;
+    }
+    .nike-product .nike-product-container .product .item .icon-hover{
+        display: none;
+    }
+    .nike-product .nike-product-container .product{
+        margin: 0 0 -130px 0;
+    }
+    .nike-product .nike-product-container .product .item .des{
+        margin-top: -105px;
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px){ 
@@ -299,6 +303,10 @@
     .menu .header-icon .icon .fa-bars{
         display: block;
     }
+    .cart-container , .fav-container{
+        width: 60vw;
+        transform: translateX(60vw);
+    }
     .feature1{
         height: 53vh;
     }
@@ -321,5 +329,225 @@
     .product .item{
         width: 49%;
         margin-bottom: -130px;
+    }
+    .feature3{
+        height: 40vh;
+    }
+    .feature4{
+        width: 99%;
+        height: 570px;
+    }
+    .feature4 .feature-4-1{
+        width: 75%;
+        margin: auto;
+        height: 33%;
+        margin-block: 0.4%;
+    }
+    .feature-nb{
+        width: 90%;
+        height: 250px;
+    }
+    .last-feature{
+        width: 100%;
+    }
+    .last-feature .box{
+        width: 100%;
+    }
+    footer .footer-container .footer-top .box{
+        width: 100%;
+        height: 50%;
+    }
+    footer .footer-container .footer-bottom{
+        height: 15%;
+        font-size: 18px;
+    }
+    footer .footer-container .footer-top .box{
+        padding: 10px 20px;
+    }
+    footer .footer-container .footer-top .box form{
+        height: 15%;
+    }
+    footer .footer-container .footer-top .box form input{
+        width: 50%;
+        height: 100%;
+    }
+    footer .footer-container .footer-top .box form button{
+        width: 15%;
+    }
+    .nike-product .nike-product-container .product{
+        margin: -20px 0 60px 0;
+    }
+    .nike-product .nike-product-container .product .item{
+        width: 100%;
+        height: 900px;
+        margin-block: -20px -20px;
+    }
+    .nike-product .nike-product-container .product .item .pic img{
+        object-fit: contain;
+    }
+    .nike-product .nike-product-container .product .item .pic{
+        margin-bottom: 6%;
+    }
+    .feature-nike-end{
+        overflow: hidden;
+        margin-top: -50px;
+    }
+    .feature-nike-end .box{
+        height: 400px;
+        width: 100%;
+    }
+    .feature-nike-end .box .img{
+        height: 69%;
+        margin-bottom: 1%;
+    }
+    .nike-product .nike-product-container .product .item .icon-hover{
+        margin-top: 13%;
+    }
+    .pagination-container .pagination-content{
+        width: 60%;
+    }
+    .menu .header-logo{
+        width: 20%;
+    }
+}
+@media (max-width: 575.98px) {
+    .menu{
+        height: 70px;
+    }
+    .menu .header-logo{
+        width: 24%;
+        margin-inline-start: 3%;
+    }
+    .menu .header-logo img{
+        object-fit: fill;
+    }
+    .menu nav ul li:hover .submenu{
+        display: none;
+    }
+    .menu nav{
+        display: none;
+        width: 102%;
+        height: 100px;
+        position: absolute;
+        top: 70px;
+        left: -.09%;
+        transition: 0.5s;
+    }
+    .menu nav ul li{
+        float: none;
+    }
+    .menu .header-icon{
+        width: 100%;
+        justify-content: flex-end;
+        margin-inline-start: 5%;
+    }
+    .menu .header-icon input{
+        margin-left: 20px;
+    }
+    .menu .header-icon input:focus{
+        width: 40%;
+    }
+    .menu .header-icon .icon .fa-bars{
+        display: block;
+    }
+    .cart-container , .fav-container{
+        width: 65vw;
+        transform: translateX(65vw);
+    }
+    .feature1{
+        height: 40vh;
+    }
+    .feature2{
+        width: 95%;
+        height: 650px;
+    }
+    .feature2 .item{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+    .feature3{
+        width: 95%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .feature3 .feature-3-1{
+        height: 220px;
+        width: 100%;
+        /* height: 100%; */
+        margin-block-end: 20px;
+    }
+    .feature3 .feature-3-1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    .feature4{
+        width: 99%;
+        height: 570px;
+    }
+    .feature4 .feature-4-1{
+        width: 75%;
+        margin: auto;
+        height: 33%;
+        margin-block: 0.4%;
+    }
+    .feature-nb{
+        width: 90%;
+        height: 250px;
+    }
+    .last-feature{
+        width: 100%;
+    }
+    .last-feature .box{
+        width: 100%;
+    }
+    .product{
+        width: 98%;
+    }
+    .product .item{
+        width: 100%;
+        height: 500px;
+        margin-bottom: -10px;
+    }
+    footer .footer-container .footer-top .box{
+        width: 100%;
+        margin-bottom: -30px;
+    }
+    footer .footer-container .footer-bottom{
+        font-size: 15px;
+    }
+
+    .nike-product .nike-product-container .product{
+        margin: -30px 0 60px 0;
+    }
+    .nike-product .nike-product-container .product .item{
+        width: 100%;
+        height: 900px;
+        margin-block: -20px -20px;
+    }
+    .nike-product .nike-product-container .product .item .pic img{
+        object-fit: contain;
+    }
+    .nike-product .nike-product-container .product .item .pic{
+        margin-bottom: 6%;
+    }
+    .feature-nike-end{
+        overflow: hidden;
+        margin-top: -50px;
+    }
+    .feature-nike-end .box{
+        height: 400px;
+        width: 100%;
+    }
+    .feature-nike-end .box .img{
+        height: 69%;
+        margin-bottom: 1%;
+    }
+    .nike-product .nike-product-container .product .item .icon-hover{
+        margin-top: 40%;
+    }
+    .pagination-container .pagination-content{
+        width: 60%;
     }
 }

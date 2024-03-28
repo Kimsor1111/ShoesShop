@@ -6,7 +6,7 @@ $(document).ready(function(){
         $('.cart-container').css({'transform' : 'translateX(0)'})
     })
     $('.cart-container .close p').click(function(){
-        $('.cart-container').css({'transform' : 'translateX(40vw)'})
+        $('.cart-container').css({'transform' : 'translateX(100vw)'})
     })
     $('.fa-user').click(function(){
         $('.login').css({'transform' : 'translateY(0)'})
@@ -31,7 +31,7 @@ $(document).ready(function(){
         $('.fav-container').css({'transform' : 'translateX(0)'})
     })
     $('.fav-container .close p').click(function(){
-        $('.fav-container').css({'transform' : 'translateX(40vw)'})
+        $('.fav-container').css({'transform' : 'translateX(100vw)'})
     })
     $('.menu .header-icon .icon .fa-bars').click(function(){
         $('.menu nav').toggle();
