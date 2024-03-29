@@ -266,6 +266,15 @@
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px){ 
+    .login .login-form{
+        width: 45vw;
+    }
+    .login .login-form form .body .fa-eye , .login .login-form form .body .fa-eye-slash{
+        position: fixed;
+        transform: translateX(38vw) translateY(82px);
+        cursor: pointer;
+        display: none;
+    }
 	.menu{
         height: 70px;
     }
@@ -413,6 +422,15 @@
     }
 }
 @media (max-width: 575.98px) {
+    .login .login-form{
+        width: 80vw;
+    }
+    .login .login-form form .body .fa-eye , .login .login-form form .body .fa-eye-slash{
+        position: fixed;
+        transform: translateX(68.5vw) translateY(82px);
+        cursor: pointer;
+        display: none;
+    }
     .menu{
         height: 70px;
     }

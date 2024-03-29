@@ -769,7 +769,7 @@ footer .footer-container .footer-bottom{
     flex-direction: column;
     line-height: 18px;
     position: relative;
-    margin-top: -30px;
+    margin-top: -2px;
 }
 .nike-product .nike-product-container .product .item .des p{
     text-align: center;
