@@ -254,7 +254,9 @@
         object-fit: cover;
     }
     .nike-product .nike-product-container .product .item .icon-hover{
-        display: none;
+        width: 45px;
+        height: 180px;
+        margin-top: 60%;
     }
     .nike-product .nike-product-container .product{
         margin: 0 0 -130px 0;
@@ -548,6 +550,6 @@
         margin-top: 40%;
     }
     .pagination-container .pagination-content{
-        width: 100%;
+        width: 90%;
     }
 }
