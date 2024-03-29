@@ -550,7 +550,7 @@
         object-fit: contain;
     }
     .nike-product .nike-product-container .product .item .pic{
-        margin-bottom: 6%;
+        margin-bottom: 0;
     }
     .feature-nike-end{
         overflow: hidden;
@@ -569,5 +569,8 @@
     }
     .pagination-container .pagination-content{
         width: 90%;
+    }
+    .nike-product .nike-product-container .product .item .des{
+        margin-top: -50px;
     }
 }
